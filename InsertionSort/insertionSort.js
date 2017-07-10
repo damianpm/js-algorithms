@@ -1,6 +1,6 @@
 const numbers = [2,8,6,44,35,69,78,54,2];
 
-let insertionSort2 = numbers => {
+let insertionSort = numbers => {
   let temp = [];
   for (var i = 1; i < numbers.length; i++) {
     for (var j = 0; j < i; j++) {
@@ -12,5 +12,5 @@ let insertionSort2 = numbers => {
   }
   return numbers;
 }
-const sortedNumbers = insertionSort2(numbers);
+const sortedNumbers = insertionSort(numbers);
 console.log(sortedNumbers);
